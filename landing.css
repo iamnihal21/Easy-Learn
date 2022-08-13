@@ -305,6 +305,9 @@ body {
     border: 1px solid gray;
     margin: 2px 0 16px 0;
     cursor: pointer;
+    outline: 0;
+    padding: 4px 8px;
+    font-size: 16px;
 }
 
 .popuptext form input[type=password] {
@@ -658,6 +661,9 @@ body {
     outline: 0;
     border: none;
     padding: 4px 8px;
-    color: black;
     font-size: 16px;
+}
+
+input {
+    color: black;
 }
