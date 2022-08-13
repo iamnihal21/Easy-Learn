@@ -108,6 +108,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 30px;
+    margin-left: 10px;
 }
 
 .join a:hover {
@@ -254,12 +255,12 @@ body {
     font-weight: 600;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #0A0A0A;
+    color: black;
 }
 
-.popuptext p {
+.popuptext p, .popuptext li {
     font-size: .875rem;
-    color: #686868;
+    color: gray;
     line-height: 1.5;
 }
 
@@ -511,6 +512,7 @@ body {
 
     .popuptext {
         width: 100%;
+        padding: 1rem;
     }
 
     .menuItem {
