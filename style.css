@@ -92,7 +92,7 @@ body {
     box-shadow: 10px 10px 0px  rgb(236, 94, 236);
 }
 .reward{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 /* Main Box Style */
@@ -102,7 +102,7 @@ body {
     padding: 10px;
     padding-top: 5px;
     border-radius: 5px;
-    background-color: rgb(197, 28, 250);
+    background-color: rgb(0,0,0);
 }
 
 .scroll {
@@ -131,7 +131,7 @@ body {
     margin-bottom: 5px;
     padding: 5px;
     font-size:15px ;
-    background-color: rgb(197,28,250);
+    background-color: rgb(0,0,0);
     cursor: pointer;
 }
 ::placeholder{
@@ -152,7 +152,8 @@ body {
     border: 2px solid transparent;
 }
 .newItem:hover{
-      border: 2px solid rgb(0, 0, 0);
+    border: 2px solid violet;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .addBtn {
@@ -161,11 +162,14 @@ body {
     margin-left: 5px;
     border: none;
     transition: 0.5s;
+    border: 2px solid transparent;
 }
 
 .addBtn:hover {
     background-color: rgb(10, 10, 10);
-    font-size:17px;
+    font-size:15px;
+    border: 2px solid violet;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .btnTask {
@@ -174,10 +178,10 @@ body {
     margin: 0;
     display: inline;
     align-items: right;
-    
+    color: aliceblue;
 }
 .btnTask:hover{
-    border: 1px solid rgb(12, 12, 12);
+    border: 1px solid violet;
     color: azure;
     background-color: rgb(12, 12, 12);
 }
@@ -202,7 +206,7 @@ body {
 .nameTask:hover {
     background-color: rgba(0, 0, 0, 0.2);
     border-right: 0;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid violet;
 }
 
 /* Task Panell Style */
@@ -212,13 +216,13 @@ body {
     color: white;
     margin-top:20px;
     padding: 10px;
-    
     border-radius: 5px;
-    background-color: rgb(197, 28, 250);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .taskPanell p {
     margin-left: 10px;
+    margin-top: 20px;
     font-size: 15px;
 }
 
@@ -344,4 +348,25 @@ body {
 
 #levelnum{
     font-size: 100px;
+}
+
+/* MUSIC PLAYER */
+#icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        width: 50px;
+}
+.rightCol{
+    border-radius:10px ;
+    margin-top: 100px;
+    background-color: rgb(12, 12, 12);
+    border: 2px;
+    height: 35px;
+    width: 100px;
+    padding: 20px;
+    border: 1px solid violet;
+    margin-right: 300px;
+    box-shadow: 10px 10px 0px  rgb(236, 94, 236);   
 }

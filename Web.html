@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script language="javascript" src="libraries/p5.js"></script>
+    <script language="javascript" src="libraries/p5.sound.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
@@ -19,9 +21,6 @@
         <nav class="header">
             <div class="logo">
                 <h1>Easy Learning &nbsp;| &nbsp;Dashboard</h1>
-            </div>
-            <div class="join">
-                
             </div>
         </nav>
         <div class="dashbord"></div>
@@ -80,9 +79,15 @@
                         <span id="totalstudied">0 HOUR</span>
                     </div>
                 </div>
-                
+                <div class="rightCol">
+                    <!-- <p>Click here to start music</p> -->
+                    <img src="play.png" id="icon">    
+                </div>
             </div>
-        </main>
+            <audio id="mySong">
+                <source src="opening-instrumental-12011.mp3" type="audio/mp3">
+            </audio>
+        </main> 
         <script src="work.js"></script>
     </body>
 

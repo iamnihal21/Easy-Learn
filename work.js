@@ -264,13 +264,31 @@ setTimeout(() => {
 let prgbar = document.getElementById("prgbar")
 
 function updateProgressBar() {
-    if(user.userpoint > 100){
+    if (user.userpoint > 100) {
         levelnum.innerHTML = ++user.userlevel
         user.userpoint -= 100
         audio.play();
     }
 
-    prgbar.style.width = user.userpoint+"%"
+    prgbar.style.width = user.userpoint + "%"
 }
-
 updateProgressBar()
+
+// Music player
+let mySong = document.getElementById("mySong")
+let icon = document.getElementById("icon")
+let count = 0
+icon.onclick = function n(){
+    if(count==0)
+    {
+        mySong.play()
+        count++
+        icon.src="pause.png"
+    }
+    else
+    {
+        mySong.pause()
+        icon.src="play.png"
+        count--
+    }
+}
