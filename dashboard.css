@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    margin: 0px;
+    /* background: radial-gradient(circle, rgba(255,178,245,1) 0%, rgba(255,142,190,1) 100%); */
+    background-image: url(Colored\ Shapes.svg);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+}
+
+/* HEADING */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgba(12, 12, 12, 0.85);
+    border-radius: 0px 0px 30px 30px;
+    animation: movedown 1s;
+}
+
+@keyframes movedown {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.logo h1 {
+    transition: .5s;
+    color: azure;
+}
+
+.logo h1:hover {
+    color: rgb(197, 28, 250);
+}
+
+.join button {
+    font-size: 20px;
+    transition: .5s;
+    padding: 0px 8px;
+    width: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.join button:hover {
+    color: rgb(197, 28, 250);
+
+}
+
+/* Box */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    animation: fadeIn 3s;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.contanier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.todo,
+.pomodoro,
+.reward,
+.lofimusic {
+    border-radius: 10px;
+    margin-top: 100px;
+    background-color: rgb(12, 12, 12);
+    border: 2px;
+    height: 350px;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid violet;
+    box-shadow: 10px 10px 0px rgb(236, 94, 236);
+}
+
+.reward {
+    /* margin-bottom: 100px; */
+}
+
+/* Main Box Style */
+#todoMain {
+    width: 90%;
+    color: white;
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+}
+
+.scroll {
+    height: 220px;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Heading Style */
+
+.heading {
+    text-align: center;
+    color: white;
+}
+
+/* Button and Input Style */
+
+.newItem,
+.addBtn,
+.btnTask {
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+.newItem:focus,
+.addBtn:focus,
+.btnTask:focus {
+    outline: 0;
+}
+
+.newItem {
+    width: 70%;
+    color: white;
+    margin-left: 7px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.newItem:hover {
+    border: 1px solid violet;
+}
+
+.addBtn {
+    width: 43px;
+    color: white;
+    margin-left: 5px;
+    border: none;
+    transition: 0.5s;
+    border: 1px solid transparent;
+}
+
+.addBtn:hover {
+    font-size: 15px;
+    border: 1px solid violet;
+}
+
+.btnTask {
+    border: 1px solid transparent;
+    border-radius: 0px 5px 5px 0px;
+    margin: 0;
+    display: inline;
+    align-items: right;
+    color: white;
+}
+
+.btnTask:hover {
+    border: 1px solid violet;
+    color: white;
+}
+
+/* To-Do List Style */
+
+.toDoList li {
+    margin: 5px 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameTask {
+    width: 100%;
+    padding: 4px;
+    margin: 0;
+    display: inline;
+    border-radius: 5px 0 0 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.nameTask:hover {
+    border-right: 0;
+    border: 1px solid violet;
+}
+
+/* Task Panell Style */
+
+.taskPanell {
+    width: 90%;
+    color: white;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.taskPanell p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.taskPanell p span {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/* POMODORO COLOCK */
+#pomodoroMain {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#message {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 300px;
+    margin-bottom: 4px;
+    margin-top: 70px;
+}
+
+#message span {
+    font-size: 14px;
+}
+
+#message span:first-child {
+    padding: 4px;
+}
+
+#message span:last-child {
+
+    cursor: pointer;
+    padding: 4px;
+}
+
+#timer {
+    margin: 0 0 24px 0;
+    font-size: 84px;
+}
+
+#btns {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+#startBtn,
+#pauseBtn,
+#resumeBtn,
+#resetBtn {
+    width: 125px;
+    font-size: 28px;
+    outline: none;
+    text-decoration: underline;
+    text-decoration-color: violet;
+
+    background-color: rgb(12, 12, 12);
+    border: none;
+    color: white;
+}
+
+/* LEVEL */
+
+.level {
+    width: 100%;
+    margin-top: 40px;
+    color: wheat;
+}
+
+.reward {
+    text-align: center;
+}
+
+.nextHead {
+    margin-top: 10px;
+    color: wheat;
+}
+
+.silverGold {
+    margin-top: 50px;
+}
+
+.gold {
+    font-size: 25px;
+    color: white;
+}
+
+.silver {
+    margin-top: 12px;
+    font-size: 25px;
+    color: white;
+}
+
+.cover {
+    width: 100%;
+    height: 10px;
+    background-color: #262626;
+    border: 1px solid violet;
+    border-radius: 2px;
+}
+
+.cover .progressbar {
+    height: 6px;
+    width: 0%;
+    background-image: linear-gradient(to right, violet, rgb(212, 23, 212));
+    margin-left: 2px;
+    margin-top: 2px;
+    border-radius: 2px;
+}
+
+.leveltext {
+    font-size: 30px;
+    color: white;
+}
+
+#levelnum {
+    font-size: 100px;
+}
+
+/* MUSIC PLAYER */
+#icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 50px;
+}
+
+.lofimusic {
+    height: auto;
+    width: 80%;
+    margin-bottom: 60px;
+}
+
+.icons {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons img {
+    cursor: pointer;
+    margin: 0 12px;
+    border-radius: 50%;
+}
+
+#musicProgressBar {
+    display: block;
+    width: 80vw;
+    cursor: pointer;
+}
+
+.lofimusic span {
+    color: white;
+    font-size: 16px;
+}
+
+/* Changing the position of elemets, so they can fit perfectly on the screen */
+
+@media (max-width: 425px) {
+    .contanier {
+        align-items: flex-start;
+    }
+
+    .todo,
+    .pomodoro,
+    .reward,
+    .lofimusic {
+        width: 75%;
+        padding: 10px;
+    }
+
+    #timer {
+        font-size: 70px;
+    }
+
+    #musicProgressBar {
+        width: 75vw;
+    }
+}
