@@ -1,4 +1,3 @@
-
 let task = []
 
 let i = 0, totalTask = task.length, pandingTask = 0;
@@ -275,50 +274,53 @@ updateProgressBar()
 // Music Plyear
 
 let songIndex = 0;
-let audioElement = new Audio('lofi/1.mp3');
+let audioElement = new Audio();
 let playBtn = document.getElementById('playBtn');
 let musicProgressBar = document.getElementById('musicProgressBar');
 let masterSongName = document.getElementById('masterSongName');
-
 let songs = [
     {musicName: "1",
-    filePath: "lofi/1.mp3"},
+    filePath: "lofi 1.mp3"},
     {musicName: "2",
-    filePath: "lofi/2.mp3"},
+    filePath: "lofi 2.mp3"},
     {musicName: "3",
-    filePath: "lofi/3.mp3"},
+    filePath: "lofi 3.mp3"},
     {musicName: "4",
-    filePath: "lofi/4.mp3"},
+    filePath: "lofi 4.mp3"},
     {musicName: "5",
-    filePath: "lofi/5.mp3"},
+    filePath: "lofi 5.mp3"},
     {musicName: "6",
-    filePath: "lofi/2.mp3"},
+    filePath: "lofi 6.mp3"},
     {musicName: "7",
-    filePath: "lofi/2.mp3"},
+    filePath: "lofi 7.mp3"},
     {musicName: "8",
-    filePath: "lofi/2.mp3"},
+    filePath: "lofi 2.mp3"},
     {musicName: "9",
-    filePath: "lofi/2.mp3"},
+    filePath: "lofi 3.mp3"},
     {musicName: "10",
-    filePath: "lofi/4.mp3"},
+    filePath: "lofi 5.mp3"},
 ] 
-
+ 
 masterSongName.innerText = songs[0].musicName
-
+ function getAudio(filePath){
+     let tempaudioElement = new Audio(filePath)
+     return (tempaudioElement)
+}
 // Handle play/pause click
+songs.forEach(element => {
+audioElement = getAudio(element.filePath)
+});   
 playBtn.addEventListener('click', ()=>{
-    if(audioElement.paused || audioElement.currentTime<=0){
-        audioElement.play();
-
-        playBtn.src = "musicPlayer/pause.png"
-    }
+    if(audioElement.paused || audioElement.currentTime==0){
+            audioElement.play();
+            playBtn.src = "pause.png"    
+    }   
     else{
         audioElement.pause();
-        
-        playBtn.src = "musicPlayer/play.png"
+        playBtn.src = "play.png"
     }
 })
-// Listen to Events
+// Listen to Eventss
 audioElement.addEventListener('timeupdate', ()=>{ 
     // Update Seekbar
     progress = parseInt((audioElement.currentTime/audioElement.duration)* 100); 
@@ -341,7 +343,7 @@ document.getElementById('nextBtn').addEventListener('click', ()=>{
     audioElement.currentTime = 0;
     audioElement.play();
 
-    playBtn.src = "musicPlayer/pause.png"
+    playBtn.src = "pause.png"
 })
 
 document.getElementById('previousBtn').addEventListener('click', ()=>{
@@ -356,5 +358,5 @@ document.getElementById('previousBtn').addEventListener('click', ()=>{
     audioElement.currentTime = 0;
     audioElement.play();
 
-    playBtn.src = "musicPlayer/pause.png"
+    playBtn.src = "pause.png"
 })
