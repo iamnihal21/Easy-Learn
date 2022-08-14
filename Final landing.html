@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Water+Brush&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="landingpageImg/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="landing.css">
+    <title>Easy Learning - Manage Learning</title>
+</head>
+
+<body>
+    <div class="navbar navbar">
+        <input type="checkbox" id="check">
+        <div class="logo">
+            <h1>Easy Learning</h1>
+        </div>
+        <br>
+        <div class="links">
+            <a class="navlinks" href="#aboutUs">About Us</a>
+            <a class="navlinks" href="#whatSpecials">What Specials?</a>
+            <a class="navlinks" href="#ourTeam">Our Team</a>
+            <a class="navlinks" href="#footer">Our Newsletter</a>
+        </div>
+        <div class="navBtn">
+            <label for="check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </div>
+
+    <div id="hero">
+        <div class="heroText">
+            <h1 class="heroHeadline"><span class="cursive">Study </span> To <span class="cursive">Earn</span></h1>
+            <p class="heroTagline">Manage your studies with our tools and earn reward after accomplishing levels</p>
+            <p class="heroJoin">Join our jorney now!!</p>
+            <div class="join">
+                <a href="#login" class="signinBtn">Log In</a>
+                <a href="#signup" class="signupBtn">Sign Up</a>
+            </div>
+        </div>
+        <div class="heroImg">
+            <img src="landingpageImg/hero.png" alt="" srcset="">
+        </div>
+    </div>
+
+    <div class="popup" id="login">
+        <div class="popup-inner">
+            <div class="popuptext">
+                <h1>Log In</h1>
+                <form action="">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="">
+                    <label for="">Password</label>
+                    <input type="password">
+                    <p>Forget Password? <a href="#">Change Now</a></p>
+                    <input type="submit" value="Log In">
+                </form>
+                <p class="joinMainLine">Don't have account? <a href="#signup">Create New</a></p>
+            </div>
+            <a class="closepopup" href="#">X</a>
+        </div>
+    </div>
+
+    <div class="popup" id="signup">
+        <div class="popup-inner">
+            <div class="popuptext">
+                <h1>Sign Up</h1>
+                <form action="">
+                    <label for="">Username</label>
+                    <input type="text" name="name" id="">
+                    <label for="">Email</label>
+                    <input type="email" name="email" id="">
+                    <label for="">Password</label>
+                    <input type="password">
+                    <label for="">Confirm Password</label>
+                    <input type="password">
+                    <input type="submit" value="Sign Up">
+                </form>
+                <p class="joinMainLine">Aleredy have account? <a href="#login">Log In</a></p>
+            </div>
+            <a class="closepopup" href="#">X</a>
+        </div>
+    </div>
+    <div class="wbimg">
+
+        <div id="aboutUs">
+            <h2>About <span class="cursive">Us</span></h2>
+            <p>Easy Learn is your <i><u>Study Partner</u></i>. It helps you to stay organized in your studies.</p>
+            <p>It has inbuilt <i><u>To Do List</u></i>, <i><u>Pomodoro Clock</u></i>, and <i><u>Lo-Fi Music
+                        Player</u></i>
+            </p>
+            <p>And And And, Your studies are going to be <i><u>fun</u></i> because along with your studies you will get
+                points for every
+                task you have done.</p>
+            <p>What are you thinking? <i><u>Join Easy Learn Now</u></i></p>
+        </div>
+    </div>
+    <div id="whatSpecials">
+        <h2>What <span class="cursive">Specials?</span></h2>
+        <div class="whatSpecialsMain">
+            <div class="specials">
+                <div>
+                    <img src="landingpageImg/todo.png" alt="to do list">
+                </div>
+                <div>
+                    <p>To Do List</p> <a href="#todolist" class="queMark"><img src="landingpageImg/queMark.webp"
+                            alt="que mark" height="25px" width="25px"></a>
+                </div>
+            </div>
+            <div class="specials">
+                <div><img src="landingpageImg/pomo.png" alt="clock"></div>
+                <div>
+                    <p>Pomodoro Clock</p> <a href="#pomodoro" class="queMark"><img src="landingpageImg/queMark.webp"
+                            alt="que mark" height="25px" width="25px"></a>
+                </div>
+            </div>
+            <div class="specials">
+                <div><img src="landingpageImg/reward.png" alt="reward"></div>
+                <div>
+                    <p>Rewards</p> <a href="#taskReward" class="queMark"><img src="landingpageImg/queMark.webp"
+                            alt="que mark" height="25px" width="25px"></a>
+                </div>
+            </div>
+            <div class="specials">
+                <div><img src="landingpageImg/music.png" alt="music"></div>
+                <div>
+                    <p>Lofi Music</p> <a href="#lofimusic" class="queMark"><img src="landingpageImg/queMark.webp"
+                            alt="que mark" height="25px" width="25px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="todolist">
+        <div class="popup-inner">
+            <div class="popupphoto">
+                <img src="landingpageImg/todo.png" alt="To Do List">
+            </div>
+            <div class="popuptext">
+                <h1>What is To Do List?</h1>
+                <p>It’s a list of tasks you need to complete or things that you want to do.</p>
+                <p>One of the most important reasons you should use a to-do list is that it will help you stay
+                    organized.</p>
+            </div>
+            <a class="closepopup" href="#whatSpecials">X</a>
+        </div>
+    </div>
+    <div class="popup" id="pomodoro">
+        <div class="popup-inner">
+            <div class="popupphoto">
+                <img src="landingpageImg/pomo.png" alt="Pomodoro Clock">
+            </div>
+            <div class="popuptext">
+                <h1>What is Pomodoro Clock?</h1>
+                <p>The Pomodoro technique is a simple yet effective tool for focused work with planned breaks in
+                    between.</p>
+                <ol>
+                    <li>Choose your work to do</li>
+                    <li>Set the timer to 25 minutes</li>
+                    <li>Work until the timer rings</li>
+                    <li>Take a five-minute break</li>
+                    <li>Take longer breaks (15 to 30 minutes) for every four pomodoro intervals</li>
+                </ol>
+            </div>
+            <a class="closepopup" href="#whatSpecials">X</a>
+        </div>
+    </div>
+    <div class="popup" id="taskReward">
+        <div class="popup-inner">
+            <div class="popupphoto">
+                <img src="landingpageImg/reward.png" alt="Reward">
+            </div>
+            <div class="popuptext">
+                <h1>What is Reward?</h1>
+                <p>Is study boring? No.</p>
+                <p>You will get rewards after completing your task or after your studies!</p>
+            </div>
+            <a class="closepopup" href="#whatSpecials">X</a>
+        </div>
+    </div>
+
+    <div class="popup" id="lofimusic">
+        <div class="popup-inner">
+            <div class="popupphoto">
+                <img src="landingpageImg/music.png" alt="Music">
+            </div>
+            <div class="popuptext">
+                <h1>What is Lofi Music?</h1>
+                <p>Lo-Fi music is a genre of music, which mainly uses to focus on something.</p>
+                <p>It doesn't have lyrics so you will not distract from task.</p>
+            </div>
+            <a class="closepopup" href="#whatSpecials">X</a>
+        </div>
+    </div>
+    <div class="wbimg">
+        <div id="ourTeam">
+            <h2>Our <span class="cursive">Team</span></h2>
+            <div class="team-main">
+                <div class="team-member">
+                    <div>
+                        <img id="p1" src="nihal.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p>Dave Nihal </p>
+                        <a href="https://www.linkedin.com" target="_blank"><img class="liImg" height="20px"
+                                src="landingpageImg/linkedin.png" alt="linkedin"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div><img id="p2" src="satya.jpeg" alt=""></div>
+                    <div>
+                        <p>Chaudhary Satyajit </p>
+                        <a href="https://www.linkedin.com" target="_blank"><img class="liImg" height="20px"
+                                src="landingpageImg/linkedin.png" alt="linkedin"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div><img id="p3" src="soham.jpeg" alt=""></div>
+                    <div>
+                        <p>Dudhhat Soham</p>
+                        <a href="https://www.linkedin.com" target="_blank"><img class="liImg" height="20px"
+                                src="landingpageImg/linkedin.png" alt="linkedin"></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div><img id="p4" src="manit.jpeg" alt=""></div>
+                    <div>
+                        <p>Dave Manit </p>
+                        <a href="https://www.linkedin.com" target="_blank"><img class="liImg" height="20px"
+                                src="landingpageImg/linkedin.png" alt="linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footer-left">
+            <div class="logo">
+                <h1>Easy Learning</h1>
+            </div>
+            <p class="copy-right">Copy Right © 2022</p>
+        </div>
+        <div class="footer-right">
+            <h2>Waitlist for Newsletter</h2>
+            <form action="">
+                <input type="email" placeholder="example@easylearn.com">
+                <input type="submit" value="JOIN">
+            </form>
+        </div>
+    </footer>
+
+    <script src="landing.js"></script>
+
+</body>
+
+</html>
